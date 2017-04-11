@@ -7,7 +7,7 @@ Objective:  Collect, Manipulate, and Clean the Data Set
 
 Files submitted with this project:
 <OL>
-<li>data_set_with_the_averages.txt</li>
-<li>merged_clean_data.txt</li>
+<li>dataSet1_Mean_and_SD_Only.txt</li>
+<li>dataSet2_averages.txt</li>
 </OL>
 
