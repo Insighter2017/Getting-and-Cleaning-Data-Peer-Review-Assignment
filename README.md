@@ -7,7 +7,9 @@ Objective:  Collect, Manipulate, and Clean the Data Set
 
 Files submitted with this project:
 <OL>
-<li>dataSet1_Mean_and_SD_Only.txt</li>
-<li>dataSet2_averages.txt</li>
+<li>activity_labels.txt: Explanation of Measurement Units
+<li>dataSet1_Mean_and_SD_Only.txt: Tidy data set with Mean and SD for each activity</li>
+<li>dataSet2_averages.txt: Tidy data set with average for each activity</li>
+<li>run_analysis.R: The annotated logic that produces both data sets</li>
 </OL>
 
