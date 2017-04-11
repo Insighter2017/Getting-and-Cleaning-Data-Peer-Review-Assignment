@@ -1,0 +1,16 @@
+http://archive.ics.uci.edu/ml/datasets/Smartphone-Based+Recognition+of+Human+Activities+and+Postural+Transitions
+
+gravity of earth -> 9.80665 m/seg2 (Gn): The units used for the accelerations (total and body) . 
+1 WALKING
+
+2 WALKING_UPSTAIRS
+
+3 WALKING_DOWNSTAIRS
+
+
+Gyroscope Units (rad/seg) are used for the following activities:
+4 SITTING
+
+5 STANDING
+
+6 LAYING
