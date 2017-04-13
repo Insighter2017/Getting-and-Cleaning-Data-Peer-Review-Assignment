@@ -43,9 +43,9 @@ names(Y) <- "activity"
 
 # 4. Appropriately labels the data set with descriptive activity names.
 
-names(S) <- "subject"  Apply name "subject" to the data table S
+names(S) <- "subject"  ##Apply name "subject" to the data table S
 cleaned <- cbind(S, Y, X)
-write.table(cleaned, "dataSet1_Mean_and_SD_Only.txt") #write the file to your directory
+write.table(cleaned, "dataSet1_Mean_and_SD_Only.txt", row.name=FALSE) #write the file to your directory
 
 
 # 5. Creates a 2nd, independent tidy data set with the average of each variable for each activity and each subject.
@@ -67,4 +67,4 @@ result[row, 3:numCols] <- colMeans(tmp[, 3:numCols])
 row = row+1
 }
 }
-write.table(result, "dataSet2_averages.txt")
+write.table(result, "dataSet2_averages.txt", row.name=FALSE)
