@@ -20,7 +20,7 @@
 * Create separate data set that calculates only the average for each activity.
 * Use only one R script to generate both data sets.
 
-The code creates three separate training and test data sets (X, subject, and y), assigns factor variable names to these tables, and performs a series grep and other string oprations to tidy the data.  Once these tables have been tidied, they are consolidated into a master data sets required by this project.
+The code creates three separate training and test data sets (X, subject, and y), assigns factor variable names to these tables, and performs a series grep and other string oprations to tidy the data.  Once these tables have been tidied, they are consolidated into the data sets required by this project.
 
 The walkthrough of this code is provided in the CodeBook.md.
 
