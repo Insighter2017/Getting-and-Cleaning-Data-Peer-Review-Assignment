@@ -5,7 +5,7 @@
 #Read each of the three files into temp variables
 #rbind to combine the training and test data.
 
-setwd("C:/Users/Shelby/DataScienceCoursera/Getting_Cleaning_Data/getdata_projectfiles_UCI HAR Dataset/UCI HAR Dataset")
+setwd("C:/Users/Shelby/DataScienceCoursera/DataScienceCoursera/WearableTech/getdata_projectfiles_UCI HAR Dataset/UCI HAR Dataset")
 
 X1 <- read.table("train/X_train.txt")
 X2 <- read.table("test/X_test.txt")
@@ -27,7 +27,7 @@ Y <- rbind(Y1, Y2)
 features <- read.table("features.txt")
 indices_features <- grep("-mean\\(\\)|-std\\(\\)", features[, 2])
 	
-	X <- X[, indices_of_good_features]
+	X <- X[, indices_features]
 		names(X) <- features[indices_features, 2]
 		names(X) <- gsub("\\(|\\)", "", names(X))
 		names(X) <- tolower(names(X))
@@ -43,9 +43,9 @@ names(Y) <- "activity"
 
 # 4. Appropriately labels the data set with descriptive activity names.
 
-names(S) <- "subject"
+names(S) <- "subject"  Apply name "subject" to the data table S
 cleaned <- cbind(S, Y, X)
-write.table(cleaned, "dataSet1_Mean_and_SD_Only.txt")
+write.table(cleaned, "dataSet1_Mean_and_SD_Only.txt") #write the file to your directory
 
 
 # 5. Creates a 2nd, independent tidy data set with the average of each variable for each activity and each subject.
